@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.com.bank.userControllers.LogController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Pane prefHeight="800.0" prefWidth="387.0" style="-fx-background-color: #6863C7;">
+               <children>
+                  <Text fill="WHITE" layoutX="23.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ermakoff Bank" wrappingWidth="340.19140625">
+                     <font>
+                        <Font name="Arial Black" size="41.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="chapterlog" layoutX="103.0" layoutY="134.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="181.0" style="-fx-background-color: transparent;" text="Войти">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Glow level="0.46" />
+                     </effect>
+                  </Button>
+                  <Button fx:id="chapterreg" layoutX="81.0" layoutY="189.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="225.0" style="-fx-background-color: transparent;" text="Зарегистрироваться" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Glow level="0.46" />
+                     </effect>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="loginanchor" layoutX="491.0" layoutY="100.0" prefHeight="566.0" prefWidth="534.0" style="-fx-background-radius: 30px; -fx-background-color: #e9e9e9;">
+         <children>
+            <Label layoutX="57.0" layoutY="45.0" prefHeight="38.0" prefWidth="428.0" text="Логин">
+               <font>
+                  <Font name="Arial" size="33.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inplogin" layoutX="53.0" layoutY="91.0" prefHeight="53.0" prefWidth="428.0" promptText="Логин" style="-fx-background-color: white; -fx-padding: 15 0 15 20; -fx-border-color: white; -fx-background-radius: 42px; -fx-border-radius: 42px;">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="53.0" layoutY="251.0" prefHeight="38.0" prefWidth="428.0" text="Пароль">
+               <font>
+                  <Font name="Arial" size="33.0" />
+               </font>
+            </Label>
+            <Button fx:id="loginbutton" layoutX="112.0" layoutY="369.0" mnemonicParsing="false" onAction="#onLoginClick" prefHeight="127.0" prefWidth="311.0" style="-fx-background-color: rgba(104, 99, 199, 1); -fx-background-radius: 50;" text="Войти" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="38.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="53.0" layoutY="151.0" prefHeight="38.0" prefWidth="428.0" text="Паспортные данные">
+               <font>
+                  <Font name="Arial" size="33.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inppassser" layoutX="53.0" layoutY="195.0" prefHeight="53.0" prefWidth="117.0" promptText="Серия" style="-fx-background-color: white; -fx-padding: 15 0 15 20; -fx-border-color: white; -fx-background-radius: 42px; -fx-border-radius: 42px;">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="inppassnum" layoutX="187.0" layoutY="195.0" prefHeight="53.0" prefWidth="291.0" promptText="Номер" style="-fx-background-color: white; -fx-padding: 15 0 15 20; -fx-border-color: white; -fx-background-radius: 42px; -fx-border-radius: 42px;">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="inppass" layoutX="53.0" layoutY="298.0" prefHeight="32.0" prefWidth="428.0" promptText="Пароль" style="-fx-background-color: white; -fx-padding: 15 0 15 20; -fx-background-radius: 42px; -fx-border-radius: 42px;">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </PasswordField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
